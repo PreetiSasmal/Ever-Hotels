@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Ever Hotel</title>
+</head>
+<style type="text/css">
+     *{padding:0px;margin: 0px;}
+     body{background: linear-gradient(to bottom, #66ccff 0%, #ff6666 100%);background-size: 1700px 1300px;}
+     
+    .form{border:8px solid rgb(244,140,142);border-radius: 65px;margin:30px 250px 60px 250px;padding: 30px;background-color:rgb(244,140,142);display: inline-block;background-image: url(3b.jpg);}
+    .formbox{border:4px solid rgb(244,140,142);padding:20px 200px 20px 200px;background-color:rgb(249,185,187);background-image: url(4.jpg)}
+    ::placeholder{text-align: center;color:black;padding:9px;background-color: white}
+
+    input{padding:5px;margin-left:0px;border-color:black;background-color:rgb(249,185,187) }
+
+
+    label{font-size:20px;font-weight:bold;color:black;}
+
+    .subrest{padding:10px 25px 10px 25px;background-color: #66ccff}
+
+    select{padding:10px 40px 10px 40px;font-weight: bold}
+
+    /*.lastbox{background-color:rgb(244,140,142);margin: 0px;height: 4%;}*/
+
+
+</style>
+<body>
+     <div style="background-image: url(3.jpg);">
+          <h1 style="text-align: center;padding: 40px 200px 0px 160px;color:white;font-size: 40px">BOOK ROOM & HALL</h1>
+     <div class="form">
+     <form action="/registration" method="POST">
+          <div class="formbox"><center>
+          <label >NAME  :   </label>
+          <input type="text" name="name" placeholder="NAME"></center>
+     </div>
+     <div class="formbox"><center>
+          <label>Phone Number  :  </label>
+          <input type="text" name="phone" placeholder="Phone Number"></center>
+     </div>
+     <div class="formbox"><center>
+          <label>GENDER  :  </label>
+          <label>FEMALE </label>
+          <input type="radio" name="gender" value="female">
+          <label>MALE </label>
+           
+      <input type="radio" name="gender" value="male"></center>
+     </div>
+     <div class="formbox"><center>
+          <label>EMAIL ID: </label>
+          <input type="text" name="email" placeholder="EMAIL ID"></center>
+     </div>
+     <div class="formbox"><center>
+          <label>PASSWORD: </label>
+          <input type="password" name="password" placeholder="PASSWORD"></center>
+     </div>
+     <div class="formbox">
+          <center>
+               <select name="room">
+                    <option >Select the type of Room</option>
+                    <option >single bedroom</option>
+                    <option >double bedroom</option>
+                    <option >suspense story</option>
+                    <option >Duplex room</option>
+                    <option >Luxery Room</option>
+                    <option >Party hall</option>
+               </select>
+          </center>
+      </div>
+
+     <div class="formbox"><center>
+          <label>Confirm PASSWORD: </label>
+          <input type="password" name="cpassword" placeholder="PASSWORD"></center>
+     </div>
+     <div class="formbox"><center>
+          <input type="reset" name="reset" class="subrest" ></center>
+     </div>
+      
+     <div class="formbox">
+          <center>
+          <input type="submit" name="submit" class="subrest" value="Register">
+          </center>
+     </div>
+     </form>
+     </div>
+</div>
+</body>
+</html>
